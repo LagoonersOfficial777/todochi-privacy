@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todochi — Legal</title>
+<style>
+  :root {
+    --ink: #1f2430;
+    --muted: #5b6472;
+    --accent: #3d6bff;
+    --line: #e4e7ee;
+    --bg: #fbfbfd;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 24px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .link-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .link-text h2 {
+    font-size: 16px;
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+  }
+  .link-text p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .arrow {
+    font-size: 18px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--muted);
+  }
+  a.contact { color: var(--accent); text-decoration: none; }
+  a.contact:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Todochi · Test Build</p>
+    <h1>Legal &amp; Policies</h1>
+    <p class="meta">Documents for Todochi, developed by Lagooners</p>
+  </header>
+
+  <div class="links">
+    <a class="link-card" href="privacy/index.html">
+      <div class="link-text">
+        <h2>Privacy Policy</h2>
+        <p>What information Todochi collects, and how it's handled</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="link-card" href="terms/index.html">
+      <div class="link-text">
+        <h2>Terms and Conditions</h2>
+        <p>The rules for using this test build of the app</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+
+    <a class="link-card" href="eula/index.html">
+      <div class="link-text">
+        <h2>End User License Agreement (EULA)</h2>
+        <p>Your license to install and use the app</p>
+      </div>
+      <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2026 Lagooners. Todochi is currently in closed testing and is not publicly released.<br>
+    Questions? <a class="contact" href="mailto:lagoonersofficial@gmail.com">lagoonersofficial@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
