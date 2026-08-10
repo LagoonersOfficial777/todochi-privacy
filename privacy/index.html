@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Todochi (Test Build)</title>
+<title>Privacy Policy — Todochi</title>
 <style>
   :root {
     --ink: #1f2430;
@@ -40,25 +40,27 @@
     color: var(--accent);
     margin: 0 0 8px;
   }
-  h1 {
-    font-size: 30px;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
-  }
-  .meta {
-    color: var(--muted);
-    font-size: 14px;
-    margin: 0;
-  }
-  h2 {
-    font-size: 19px;
-    margin: 36px 0 12px;
-    letter-spacing: -0.01em;
-  }
+  h1 { font-size: 30px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 19px; margin: 36px 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 15.5px; margin: 20px 0 8px; }
   p { margin: 0 0 14px; color: var(--ink); }
   ul { margin: 0 0 14px; padding-left: 22px; }
   li { margin-bottom: 6px; }
   strong { font-weight: 600; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 20px;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; }
   .card {
     background: var(--card);
     border: 1px solid var(--line);
@@ -67,9 +69,6 @@
     margin: 24px 0;
   }
   .card p { margin-bottom: 0; }
-  .no-collect {
-    font-weight: 600;
-  }
   footer {
     margin-top: 48px;
     padding-top: 20px;
@@ -84,30 +83,60 @@
 <body>
 <div class="wrap">
   <header>
-    <p class="eyebrow">Todochi · Test Build</p>
+    <p class="eyebrow">Todochi</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective Date: July 22, 2026</p>
+    <p class="meta">Effective Date: August 10, 2026</p>
   </header>
 
-  <p>This is a preliminary test version of Todochi, developed by Lagooners, used solely for closed testing purposes prior to public release.</p>
+  <p>This Privacy Policy explains what information Todochi ("the App"), developed by Lagooners, collects, how it is used, and your choices regarding that information.</p>
 
   <h2>Information We Collect</h2>
-  <p class="no-collect">This test build does not collect, store, or transmit any personal data.</p>
-  <p>Specifically, this app does <strong>not</strong>:</p>
+
+  <h3>Account information</h3>
+  <p>You can use Todochi as a guest, or create an account using email and password, Google Sign-In, or Sign in with Apple. If you create an account, we collect and store:</p>
   <ul>
-    <li>Collect your name, email, or contact information</li>
-    <li>Access your camera, microphone, or location</li>
-    <li>Use analytics, advertising, or tracking services</li>
-    <li>Require an account or login</li>
-    <li>Send any data to external servers</li>
+    <li>Your email address</li>
+    <li>The name, age, and country you provide during profile setup</li>
+    <li>Your selected companion character and app preferences</li>
   </ul>
-  <p>Any content you enter (such as sample reminders) is stored only temporarily on your device and is not transmitted anywhere.</p>
+  <p>If you sign in as a guest without creating an account, this information is instead stored locally on your device only, and is not sent to our servers.</p>
 
-  <h2>Permissions</h2>
-  <p>This test build may request notification permissions solely to demonstrate local reminder functionality. No data associated with this permission is collected or shared.</p>
+  <h3>Reminder and usage content</h3>
+  <p>Reminders, subtasks, and completion history you create in the App are stored locally on your device using an on-device database. This content is not currently synced to our servers.</p>
 
-  <h2>Changes to This App</h2>
-  <p>This is an early test version. The final public release of Todochi may include additional features and services (such as cloud sync or subscription purchases), and this Privacy Policy will be updated accordingly before that version is released.</p>
+  <h3>Purchase information</h3>
+  <p>If you subscribe to Todochi Premium, purchase and subscription status is processed by Apple's In-App Purchase system or Google Play Billing (depending on your device), and managed with the help of RevenueCat, our subscription management provider. RevenueCat receives a unique identifier tied to your account so we can verify your subscription status; it does not receive your payment card details, which are handled entirely by Apple or Google.</p>
+
+  <h3>Device permissions</h3>
+  <p>Todochi requests permissions for notifications, exact alarms, and full-screen alerts so that reminders can wake your device reliably. These permissions are used only to deliver reminders and are not used to collect or share data about you.</p>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To create and maintain your account</li>
+    <li>To sync your profile and character selection across devices, if you have an account</li>
+    <li>To verify and manage your premium subscription</li>
+    <li>To deliver reminders and alarms as you've scheduled them</li>
+    <li>To respond to support requests you send us</li>
+  </ul>
+  <p>We do not use your information for advertising, and we do not sell your information to third parties.</p>
+
+  <h2>Third-Party Services We Use</h2>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr>
+    <tr><td>Firebase (Google)</td><td>Account authentication and profile storage</td><td>Email, profile data</td></tr>
+    <tr><td>Google Sign-In</td><td>Optional sign-in method</td><td>Email, name (per Google's own privacy policy)</td></tr>
+    <tr><td>Sign in with Apple</td><td>Optional sign-in method</td><td>Email (or Apple's private relay email), name if shared</td></tr>
+    <tr><td>RevenueCat</td><td>Subscription management</td><td>Anonymized purchase/subscription identifiers</td></tr>
+  </table>
+
+  <h2>Data Retention and Deletion</h2>
+  <p>You can delete your account at any time from within the App's Settings screen. Deleting your account removes your profile data from our servers. Note that subscription cancellation is handled separately through Apple's or Google's own subscription management, accessible from the App's Settings.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Todochi is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can remove it.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Material changes will be reflected by an updated Effective Date above.</p>
 
   <div class="card">
     <h2 style="margin-top:0;">Contact Us</h2>
@@ -117,7 +146,7 @@
   </div>
 
   <footer>
-    &copy; 2026 Lagooners. Todochi is currently in closed testing and is not publicly released.
+    &copy; 2026 Lagooners.
   </footer>
 </div>
 </body>
